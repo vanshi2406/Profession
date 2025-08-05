@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 232px;
+    margin-bottom: 232px;
+}
+
+.col-1 {
+    width: 8.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.card {
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.card:hover .icon-box-container {
+    right: 0%;
+}
+
+.name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.font {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 151%;
+    text-align: center;
+    color: #7b7b7b;
+}
+
+.relative {
+    position: relative;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-box {
+    transition: all 100ms linear
+}
+.icon-box-container {
+    position: absolute;
+    right: -41%;
+    top: 38%;
+    transform: translateY(-50%);
+    transition: all 150ms linear;
+    margin-top: 5px;
+}
+.icon-box:hover {
+    background-color: #FF5300;
+    box-shadow: 1px 7px 10px 0px #FF530080;
+}
+
+.icon-box:hover svg path {
+    fill: white;
+}
